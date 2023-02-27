@@ -1,0 +1,17 @@
+{
+  "name": "hybus-information-kor",
+  "version": "1.0.0",
+  "main": "convert.ts",
+  "repository": "https://github.com/BusHanyang/hybus-information-kor.git",
+  "author": "Taewan Park <swimingtw@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "showdown": "^2.1.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "@types/showdown": "^2.0.0"
+  }
+}
