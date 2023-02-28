@@ -19,7 +19,7 @@ const createCustomHtmlFile = (title: string, htmlContent: string): void => {
         <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css" integrity="sha512-bm684OXnsiNuQSyrxuuwo4PHqr3OzxPpXyhT66DA/fhl73e1JmBxRKGnO/nRwWvOZxJLRCmNH7FII+Yn1JNPmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link rel="stylesheet" type="text/css" href="github-markdown.css"/>
           <style>
             .markdown-body {
               box-sizing: border-box;
@@ -32,18 +32,6 @@ const createCustomHtmlFile = (title: string, htmlContent: string): void => {
             @media (max-width: 767px) {
               .markdown-body {
                 padding: 15px;
-              }
-            }
-
-            @media (prefers-color-scheme: dark) {
-              .markdown-body {
-                --color-canvas-default: #374151;
-              }
-            }
-
-            @media (prefers-color-scheme: light) {
-              .markdown-body {
-                --color-canvas-default: #FFFFFF;
               }
             }
           </style>
