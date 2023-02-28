@@ -46,9 +46,9 @@ const createCustomHtmlFile = (title: string, htmlContent: string): void => {
               }
 
               if (themeCookie === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'dark');
+                document.body.setAttribute('data-theme', 'dark');
               } else {
-                document.documentElement.setAttribute('data-theme', 'light');
+                document.body.setAttribute('data-theme', 'light');
               }
           </script>
           <title>${title}</title>
