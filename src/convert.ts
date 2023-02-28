@@ -70,14 +70,16 @@ const createCustomHtmlFile = (title: string, htmlContent: string): void => {
         </body>
       </html>
     `;
-
-    fs.writeFile("index.html", html, (err) => {
-      if (err) {
-        console.error(err)
-        return
-      }
-      console.log("File created successfully")
-    })
+    
+    fs.promises.mkdir("./dist", { recursive: true }).then(() => {
+      fs.writeFile("./dist/index.html", html, (err) => {
+        if (err) {
+          console.error(err)
+          return
+        }
+        console.log("File created successfully")
+      })
+    }).catch((err) => console.error(err))
   }
 
 const convertFile = async (title: string, filename: string): Promise<void> => {
