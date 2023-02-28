@@ -35,26 +35,26 @@ const createCustomHtmlFile = (title: string, htmlContent: string): void => {
               }
             }
           </style>
-          <script>
-            const themeCookie = document.cookie
-              .split('; ')
-              .find(row => row.startsWith('_theme='))
-              ?.split('=')[1];
-
-              if (themeCookie === undefined) {
-                console.log("Theme color not detected.")
-              }
-
-              if (themeCookie === 'dark') {
-                document.body.setAttribute('data-theme', 'dark');
-              } else {
-                document.body.setAttribute('data-theme', 'light');
-              }
-          </script>
           <title>${title}</title>
-        </head>
-        <body class="markdown-body">
+          </head>
+          <body class="markdown-body">
             ${htmlContent}
+            <script>
+              const themeCookie = document.cookie
+                .split('; ')
+                .find(row => row.startsWith('_theme='))
+                ?.split('=')[1];
+
+                if (themeCookie === undefined) {
+                  console.log("Theme color not detected.")
+                }
+
+                if (themeCookie === 'dark') {
+                  document.body.setAttribute('data-theme', 'dark');
+                } else {
+                  document.body.setAttribute('data-theme', 'light');
+                }
+            </script>
         </body>
       </html>
     `;
