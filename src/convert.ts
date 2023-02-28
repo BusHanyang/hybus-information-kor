@@ -34,7 +34,35 @@ const createCustomHtmlFile = (title: string, htmlContent: string): void => {
                 padding: 15px;
               }
             }
+
+            @media (prefers-color-scheme: dark) {
+              .markdown-body {
+                --color-canvas-default: #374151;
+              }
+            }
+
+            @media (prefers-color-scheme: light) {
+              .markdown-body {
+                --color-canvas-default: #FFFFFF;
+              }
+            }
           </style>
+          <script>
+            const themeCookie = document.cookie
+              .split('; ')
+              .find(row => row.startsWith('_theme='))
+              ?.split('=')[1];
+
+              if (themeCookie === undefined) {
+                console.log("Theme color not detected.")
+              }
+
+              if (themeCookie === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+              } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+              }
+          </script>
           <title>${title}</title>
         </head>
         <body class="markdown-body">
