@@ -36,6 +36,15 @@ const createCustomHtmlFile = (title: string, htmlContent: string): void => {
             }
           </style>
           <title>${title}</title>
+          <!-- Google tag (gtag.js) -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-56LBR2J0H7"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-56LBR2J0H7');
+          </script>
           </head>
           <body class="markdown-body">
             ${htmlContent}
