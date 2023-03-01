@@ -4,7 +4,7 @@
   "main": "convert.ts",
   "repository": "https://github.com/BusHanyang/hybus-information-kor.git",
   "author": "Taewan Park <swimingtw@gmail.com>",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "private": false,
   "dependencies": {
     "showdown": "^2.1.0",
