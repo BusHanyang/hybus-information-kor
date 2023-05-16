@@ -35,6 +35,9 @@ jobs:
         
       - name: Run Script
         run: node src/convert.js
+
+      - name: Copy image files
+        run: cp -r images/ ./dist/images
         
       - name: Copy CNAME File
         run: cp CNAME ./dist
