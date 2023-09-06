@@ -8,10 +8,12 @@ on:
       - .github/workflows/main.yml
       - github-markdown.css
       - README.md
-      - src/convert.ts
+      - src/**
       - package.json
       - tsconfig.json
       - CNAME
+      - images/**
+  workflow_dispatch:
       
 jobs:
   deploy:
