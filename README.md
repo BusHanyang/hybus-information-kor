@@ -9,7 +9,7 @@
 
 ### 운행 노선 안내
 
-![route_info](./images/route_information.png)
+![route_info](./images/route_korean_outline.png)
 
 
 ### 사용법
