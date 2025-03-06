@@ -7,11 +7,11 @@
   "license": "Apache 2.0",
   "private": false,
   "dependencies": {
-    "showdown": "^2.2.1",
-    "typescript": "^5.4.2"
+    "showdown": "^2.1.0",
+    "typescript": "^5.8.2"
   },
   "devDependencies": {
-    "@types/node": "^20.11.24",
-    "@types/showdown": "^2.1.1"
+    "@types/node": "^22.13.9",
+    "@types/showdown": "^2.0.6"
   }
 }
